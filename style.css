@@ -1,10 +1,10 @@
 * {
 	margin: 0;
 	padding: 0;
-	background-color: #eee;
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.5;
 	font-size: 16px;
+	box-sizing: border-box;
 }
 
 .layout {
@@ -15,6 +15,7 @@
 	gap: 0px 0px;
 	grid-auto-flow: row;
 	grid-template-areas: '. .';
+	background-color: #f0f0f0;
 }
 
 .leaves {
@@ -31,9 +32,38 @@
 	font-size: 1.3rem;
 }
 
-.container {
-	margin: 0;
-	padding: 0;
+fieldset {
+	border: none;
+	padding: 1rem 5vw;
+	background-color: #fff;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+	z-index: -1;
+}
+
+form {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 1rem;
+	padding: 1rem 0;
+}
+
+fieldset > h2 {
+	width: 100%;
+	font-size: 1.2rem;
+}
+
+.input {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-evenly;
+	width: 40%;
+	margin-right: 2rem;
+}
+
+label {
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 
 button {
@@ -44,9 +74,9 @@ button {
 	border-radius: 7px;
 	border: 0;
 	background-color: rgb(73, 109, 72);
-	color: #eee;
+	color: #f0f0f0;
 	transition: 0.2s ease-in-out;
-	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
 }
 
 button:hover {
