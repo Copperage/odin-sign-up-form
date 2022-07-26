@@ -18,11 +18,24 @@
 	background-color: #f0f0f0;
 }
 
-.leaves {
-	object-fit: cover;
-	width: 100%;
+.sidebar {
 	height: 100vh;
-	z-index: -1;
+	width: 100%;
+	background-position: center;
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-image: url(./assets/halie-west-25xggax4bSA-unsplash.jpg);
+}
+
+.sourcetext {
+	position: fixed;
+	bottom: 0;
+	right: 5;
+}
+
+.sourcetext p,
+.sourcetext a {
+	font-size: 0.9rem;
 }
 
 .brief {
